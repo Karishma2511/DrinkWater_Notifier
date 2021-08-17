@@ -27,4 +27,4 @@ def startTime(time_interval):
 if __name__ == '__main__':
     time_interval = 0
     startTime(time_interval)
-    print(datetime.datetime.now())
+    
