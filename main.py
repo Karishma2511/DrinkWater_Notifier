@@ -1,6 +1,7 @@
 import time
 import pync
 import datetime
+from beepy import beep
 
 
 def log():
@@ -14,6 +15,7 @@ def log():
 
 def notify():
     pync.notify("It's time to drink water", title="Water Reminder")
+    beep(sound="ready")
     log()
     return 0
 
@@ -27,4 +29,4 @@ def startTime(time_interval):
 if __name__ == '__main__':
     time_interval = 0
     startTime(time_interval)
-    
+
